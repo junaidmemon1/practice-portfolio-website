@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a id="top"></a>
+
+<!-- Header -->
+<header>
+    <h1 id="styled-name">John Doe</h1>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul class="navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+</nav>
+
+<!-- About Me Section -->
+<section id="about">
+  <img src="profile.jpg" alt="Profile Picture" id="profile-img">
+  <h2>John Doe</h2>
+  <p>
+    I am a passionate front-end web developer based in Seattle, with a strong
+    focus on creating responsive and user-friendly websites. I have 3 years of
+    experience working with HTML, CSS, and JavaScript. I love turning ideas into
+    clean, functional, and beautiful designs.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <img src="./images/html.png" alt="HTML Logo" width="60">
+      <p>HTML5</p>
+    </div>
+    <div class="skill">
+      <img src="./images/css.png" alt="CSS Logo" width="60">
+      <p>CSS3</p>
+    </div>
+    <div class="skill">
+      <img src="./images/js.png" alt="JavaScript Logo" width="60">
+      <p>JavaScript</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        A responsive personal portfolio created using HTML, CSS, and JavaScript.
+        It includes smooth scrolling navigation and animated sections.
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>
+        A live weather forecasting web app built using the OpenWeatherMap API
+        and vanilla JavaScript for fetching real-time data.
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>To-Do List Manager</h3>
+      <p>
+        A dynamic to-do list that allows users to add, mark complete, and delete
+        tasks — data stored in browser localStorage.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Recommendations Section -->
+<section id="recommendations">
+  <h2>Recommendations</h2>
+  <div class="recommendations-container">
+    <div class="recommendation-card">
+      <p>"John is an exceptional developer with an amazing eye for design. His front-end work consistently exceeds expectations!"</p>
+      <h4>– Sarah Williams, Project Manager</h4>
+    </div>
+    <div class="recommendation-card">
+      <p>"Working with John was a great experience. His attention to detail and communication made our project a big success."</p>
+      <h4>– Michael Brown, UX Designer</h4>
+    </div>
+    <div class="recommendation-card">
+      <p>"John brings creativity and clarity to every project. He’s reliable, efficient, and always ready to take on new challenges."</p>
+      <h4>– Emily Davis, Software Engineer</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Add New Recommendation Section -->
+<section id="add-recommendation">
+  <h3>Add a Recommendation</h3>
+  <textarea id="newRecommendation" placeholder="Write your recommendation here..."></textarea>
+  <br>
+  <button id="submitBtn">Submit</button>
+</section>
+
+<!-- Home Icon -->
+<a href="#top" id="home-icon">HOME</a>
+
+<!-- Modal -->
+<div id="confirmationModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <p>Thank you! Your recommendation has been submitted.</p>
+  </div>
+</div> 
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+/* Styling for header area */
+header {
+  background-color: #1a1a1a; /* dark background */
+  padding: 20px 30px;       /* spacing inside header */
+}
+
+/* Styling for name */
+#styled-name {
+  font-family: 'Poppins', sans-serif;  /* Modern font */
+  font-size: 32px;                     /* Bigger text */
+  color: #00bcd4;                      /* Bright teal color */
+  font-weight: bold;                   /* Bold text */
+  text-transform: uppercase;           /* All capital letters */
+  letter-spacing: 2px;                 /* Space between letters */
+  float: left;                         /* Position at top-left */
+}
+
+/* === Task 2: Navigation Bar === */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  list-style-type: none; /* removes bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline; /* keeps items in one line */
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #00bcd4; /* matches the name color */
+}
+
+/* === Task 3: About Me Section === */
+#about {
+  text-align: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+#profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;
+  border: 4px solid #00bcd4; /* border color same as name/nav hover */
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #555;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Task 4: Skills Section === */
+#skills {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+#skills h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* makes it responsive */
+  gap: 40px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.skill img {
+  width: 80px;  /* Ensure width */
+  height: 80px; /* Ensure height */
+  object-fit: contain; /* Ensures image is contained within box */
+  object-position: center; /* Keeps image centered */
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Small animation when you hover a skill */
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* ==== Projects Section ==== */
+#projects {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: white;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ==== Recommendations Section ==== */
+#recommendations {
+  background-color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#recommendations h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.recommendations-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.recommendation-card {
+  background-color: #e0f7fa;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.recommendation-card p {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recommendation-card h4 {
+  color: #007a8c;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* ==== Add Recommendation Section ==== */
+#add-recommendation {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+#add-recommendation h3 {
+  color: #222;
+}
+
+#newRecommendation {
+  width: 60%;
+  height: 80px;
+  padding: 10px;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  resize: none;
+}
+
+#submitBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#submitBtn:hover {
+  background-color: #0097a7;
+}
+
+/* ==== Home Icon ==== */
+#home-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 2em;
+  text-decoration: none;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+#home-icon:hover {
+  background-color: #0097a7;
+  transform: scale(1.1);
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent background */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto; /* center vertically */
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Close Button */
+.close-btn {
+  color: #00bcd4;
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #0097a7;
+}
