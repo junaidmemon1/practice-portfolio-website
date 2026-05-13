@@ -55,7 +55,7 @@ project-folder/
 
 🚀 Visit the live website here:
 
-👉 [Live Website](YOUR_NETLIFY_LINK_HERE)
+👉 https://zingy-longma-d823ad.netlify.app/
 
 ---
 
