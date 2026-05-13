@@ -64,7 +64,7 @@ project-folder/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/junaidmemon1/practice-portfolio-website.git
 ```
 
 Open the project folder and run the `index.html` file in your browser.
